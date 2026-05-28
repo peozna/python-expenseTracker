@@ -13,7 +13,7 @@ while choice != 4:
     choice = int(input("Enter your choice: "))
     
     if choice == 1:
-        amount = input("Enter amount: ")
+        amount = int(input("Enter amount: "))
         category = input("Enter category: ")
         description = input("Enter description: ")
         date = input("Enter date: ")
