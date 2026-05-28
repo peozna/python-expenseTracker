@@ -2,6 +2,7 @@ from Expense import Expense
 from ExpenseManager import ExpenseManager
 
 manager = ExpenseManager()
+choice = 0
 
 while choice != 4:
     print("[1] Add expense")
@@ -19,3 +20,12 @@ while choice != 4:
 
         expense = Expense(amount, category, description, date)
         manager.addExpense(expense)
+
+    elif choice == 2:
+        manager.showAllExpenses()
+        
+    elif choice == 3:
+        manager.showTotalSum()
+
+    elif choice == 4:
+        break
