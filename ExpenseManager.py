@@ -1,7 +1,6 @@
 expenseList =  []
 
-def addExpense(amount, category, description, date):
-    expense = Expense(amount, category, description, date)
+def addExpense(expense):
     expenseList.append(expense)
     
 def showAllExpenses():
